@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/paint_pallete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp"
+        android:background="@drawable/toolbar_background"
+        android:gravity="center_horizontal|center_vertical">
+        <ImageButton
+            android:id="@+id/red_color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/red_background"/>
+        <ImageButton
+            android:id="@+id/orange_color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/orange_background"/>
+        <ImageButton
+            android:id="@+id/yellow_color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/yellow_background"/>
+        <ImageButton
+            android:id="@+id/green_color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/green_background"/>
+        <ImageButton
+            android:id="@+id/blue_color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_background"/>
+        <ImageButton
+            android:id="@+id/purple_color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/purple_background"/>
+        <ImageButton
+            android:id="@+id/black_color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/black_background"/>
+        <ImageButton
+            android:id="@+id/white_color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/white_background"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/paint_pallete">
+        <include layout = "@layout/my_canvas_view"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
